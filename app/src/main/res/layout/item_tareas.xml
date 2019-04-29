@@ -42,7 +42,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/fechatarea"
+            android:id="@+id/fechatareas"
             android:textSize="18sp"
             android:textColor="#F63EA5"
             android:layout_marginTop="8dp"
