@@ -19,9 +19,10 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+
     TextView titlepage, subtitlepage, endpage;
 
-    DatabaseReference reference;
+    private DatabaseReference reference;
     RecyclerView nuestrastareas;
     ArrayList<MisTareas> list;
     AdaptadorTareas adaptadorTareas;
@@ -52,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //recoger datos de firebase
-        reference = FirebaseDatabase.getInstance().getReference().child("ListaTareas");
+        reference = FirebaseDatabase.getInstance().getReference();
+        reference = reference.child("ListaTareas");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
