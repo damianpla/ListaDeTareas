@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Button;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     TextView titlepage, subtitlepage, endpage;
+    Button btnAnyadirNueva;
 
     private DatabaseReference reference;
     RecyclerView nuestrastareas;
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         subtitlepage = findViewById(R.id.subtitlepage);
         endpage = findViewById(R.id.endpage);
 
+        btnAnyadirNueva =findViewById(R.id.btnAnyadirNueva);
+
         //importamos fuente
         Typeface MLight= Typeface.createFromAsset(getAssets(), "fonts/ML.ttf");
         Typeface MMedium= Typeface.createFromAsset(getAssets(), "fonts/MM.ttf");
@@ -45,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         titlepage.setTypeface(MMedium);
         subtitlepage.setTypeface(MLight);
         endpage.setTypeface(MLight);
+
+        btnAnyadirNueva.setTypeface(MLight);
+
 
         //trabajar con los datos
         nuestrastareas = findViewById(R.id.nuestrastareas);
