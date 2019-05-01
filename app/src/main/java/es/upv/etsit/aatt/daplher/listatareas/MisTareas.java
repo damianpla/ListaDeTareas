@@ -5,14 +5,24 @@ public class MisTareas {
     String titulotareas;
     String fechatareas;
     String descripciontareas;
+    String idtareas;
 
     public MisTareas() {
     }
 
-    public MisTareas(String titulotareas, String fechatareas, String descripciontareas) {
+    public MisTareas(String titulotareas, String fechatareas, String descripciontareas, String idtareas) {
         this.titulotareas = titulotareas;
         this.fechatareas = fechatareas;
         this.descripciontareas = descripciontareas;
+        this.idtareas = idtareas;
+    }
+
+    public String getIdtareas() {
+        return idtareas;
+    }
+
+    public void setIdtareas(String idtareas) {
+        this.idtareas = idtareas;
     }
 
     public String getTitulotareas() {

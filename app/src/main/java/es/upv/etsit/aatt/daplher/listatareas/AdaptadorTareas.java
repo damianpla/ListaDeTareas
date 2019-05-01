@@ -1,6 +1,7 @@
 package es.upv.etsit.aatt.daplher.listatareas;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -32,6 +33,23 @@ public class AdaptadorTareas extends RecyclerView.Adapter <AdaptadorTareas.MyVie
         myViewHolder.descripciontareas.setText(misTareas.get(i).getDescripciontareas());
         myViewHolder.fechatareas.setText(misTareas.get(i).getFechatareas());
 
+        final  String getTituloTareas = misTareas.get(i).getTitulotareas();
+        final  String getDescripcionTareas = misTareas.get(i).getDescripciontareas();
+        final  String getFechaTareas = misTareas.get(i).getFechatareas();
+        final  String getIdTareas = misTareas.get(i).getIdtareas();
+
+        myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent aa = new Intent(context,EditarTarea.class);
+                aa.putExtra("titulotareas",getTituloTareas);
+                aa.putExtra("descripciontareas",getDescripcionTareas);
+                aa.putExtra("fechatareas",getFechaTareas);
+                aa.putExtra("idtareas", getIdTareas);
+                context.startActivity(aa);
+            }
+        });
+
     }
 
     @Override
@@ -41,13 +59,13 @@ public class AdaptadorTareas extends RecyclerView.Adapter <AdaptadorTareas.MyVie
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView titulotareas,descripciontareas, fechatareas;
+        TextView titulotareas,descripciontareas, fechatareas, idtareas;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             titulotareas = (TextView) itemView.findViewById(R.id.titulotareas);
             descripciontareas = (TextView) itemView.findViewById(R.id.descripciontareas);
-           fechatareas = (TextView) itemView.findViewById(R.id.fechatareas);
+            fechatareas = (TextView) itemView.findViewById(R.id.fechatareas);
         }
     }
 

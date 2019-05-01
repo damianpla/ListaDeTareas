@@ -28,6 +28,8 @@ public class NuevaActividadTarea extends AppCompatActivity {
     Button btnGuardarTarea, btnCancelar;
     DatabaseReference reference;
     Integer numeroTarea = new Random().nextInt();
+    String idtareas = Integer.toString(numeroTarea);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,9 @@ public class NuevaActividadTarea extends AppCompatActivity {
         btnGuardarTarea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //insertar datos en firebase
+
                 reference = FirebaseDatabase.getInstance().getReference().child("CajaTareas").
                         child("Tareas" + numeroTarea);
                 reference.addValueEventListener(new ValueEventListener() {
@@ -60,6 +64,7 @@ public class NuevaActividadTarea extends AppCompatActivity {
                         dataSnapshot.getRef().child("titulotareas").setValue(titulotareas.getText().toString());
                         dataSnapshot.getRef().child("descripciontareas").setValue(descripciontareas.getText().toString());
                         dataSnapshot.getRef().child("fechatareas").setValue(fechatareas.getText().toString());
+                        dataSnapshot.getRef().child("idtareas").setValue(idtareas);
 
                         Intent a = new Intent(NuevaActividadTarea.this,MainActivity.class);
                         startActivity(a);
