@@ -2,25 +2,25 @@ package es.upv.etsit.aatt.daplher.listatareas;
 
 public class MisTareas {
 
-    String titletareas;
+    String titulotareas;
     String fechatareas;
-    String desctareas;
+    String descripciontareas;
 
     public MisTareas() {
     }
 
-    public MisTareas(String titletareas, String fechatareas, String desctareas) {
-        this.titletareas = titletareas;
+    public MisTareas(String titulotareas, String fechatareas, String descripciontareas) {
+        this.titulotareas = titulotareas;
         this.fechatareas = fechatareas;
-        this.desctareas = desctareas;
+        this.descripciontareas = descripciontareas;
     }
 
-    public String getTitletareas() {
-        return titletareas;
+    public String getTitulotareas() {
+        return titulotareas;
     }
 
-    public void setTitletareas(String titletareas) {
-        this.titletareas = titletareas;
+    public void setTitulotareas(String titulotareas) {
+        this.titulotareas = titulotareas;
     }
 
     public String getFechatareas() {
@@ -31,11 +31,10 @@ public class MisTareas {
         this.fechatareas = fechatareas;
     }
 
-    public String getDesctareas() {
-        return desctareas;
+    public String getDescripciontareas() {
+        return descripciontareas;
     }
 
-    public void setDesctareas(String desctareas) {
-        this.desctareas = desctareas;
+    public void setDescripciontareas(String descripciontareas) { this.descripciontareas = descripciontareas;
     }
 }

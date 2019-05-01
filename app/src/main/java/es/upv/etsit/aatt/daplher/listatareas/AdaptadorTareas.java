@@ -28,8 +28,8 @@ public class AdaptadorTareas extends RecyclerView.Adapter <AdaptadorTareas.MyVie
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
-        myViewHolder.titletareas.setText(misTareas.get(i).getTitletareas());
-        myViewHolder.desctareas.setText(misTareas.get(i).getDesctareas());
+        myViewHolder.titulotareas.setText(misTareas.get(i).getTitulotareas());
+        myViewHolder.descripciontareas.setText(misTareas.get(i).getDescripciontareas());
         myViewHolder.fechatareas.setText(misTareas.get(i).getFechatareas());
 
     }
@@ -41,12 +41,12 @@ public class AdaptadorTareas extends RecyclerView.Adapter <AdaptadorTareas.MyVie
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView titletareas,desctareas, fechatareas;
+        TextView titulotareas,descripciontareas, fechatareas;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            titletareas = (TextView) itemView.findViewById(R.id.titletareas);
-            desctareas = (TextView) itemView.findViewById(R.id.desctareas);
+            titulotareas = (TextView) itemView.findViewById(R.id.titulotareas);
+            descripciontareas = (TextView) itemView.findViewById(R.id.descripciontareas);
            fechatareas = (TextView) itemView.findViewById(R.id.fechatareas);
         }
     }

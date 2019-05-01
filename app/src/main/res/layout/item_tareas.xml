@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/titletareas"
+            android:id="@+id/titulotareas"
             android:layout_marginTop="19dp"
             android:textSize="22sp"
             android:textColor="#000C5D"
@@ -24,7 +24,7 @@
 
 
         <TextView
-            android:id="@+id/desctareas"
+            android:id="@+id/descripciontareas"
             android:layout_marginTop="8dp"
             android:textSize="18sp"
             android:textColor="#ADADAD"
@@ -45,6 +45,7 @@
             android:textSize="18sp"
             android:textColor="#F63EA5"
             android:layout_marginTop="8dp"
+            android:textAlignment="center"
             android:text="Mañana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

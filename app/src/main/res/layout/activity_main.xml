@@ -31,7 +31,7 @@
                     android:layout_marginTop="20dp"
                     android:textSize="28sp"
                     android:textColor="#FFF"
-                    android:text="Mis Tareas"
+                    android:text="Mis tareas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -41,7 +41,7 @@
                     android:textSize="18sp"
                     android:textColor="#4A4E6A"
                     android:layout_marginTop="8dp"
-                    android:text="Acabarlas rapidamente hoy"
+                    android:text="Tareas por hacer                        "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
