@@ -4,7 +4,15 @@
     <item
         android:drawable="@drawable/bginputseleccionado"
         android:state_pressed="true"
+        />
+
+    <item
+        android:drawable="@drawable/bginputseleccionado"
         android:state_selected="true"
+        />
+
+    <item
+        android:drawable="@drawable/bginputseleccionado"
         android:state_focused="true"
         />
 

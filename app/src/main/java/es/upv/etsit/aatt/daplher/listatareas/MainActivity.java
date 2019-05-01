@@ -6,9 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Button;
+import android.content.Intent;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -51,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
         endpage.setTypeface(MLight);
 
         btnAnyadirNueva.setTypeface(MLight);
+
+        btnAnyadirNueva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this,NuevaActividadTarea.class);
+                startActivity(a);
+            }
+        });
 
 
         //trabajar con los datos

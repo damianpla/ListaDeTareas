@@ -65,9 +65,13 @@
             <EditText
                 android:id="@+id/tituloTareas"
                 android:inputType="text"
+                android:background="@drawable/bginputtarea"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
                 android:hint="¿Qué quieres hacer?"
                 android:layout_width="match_parent"
-                android:layout_height="45dp" />
+                android:layout_height="55dp" />
 
         </LinearLayout>
 
