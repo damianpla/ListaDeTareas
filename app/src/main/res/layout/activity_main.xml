@@ -41,7 +41,7 @@
                     android:textSize="18sp"
                     android:textColor="#4A4E6A"
                     android:layout_marginTop="8dp"
-                    android:text="Tareas por hacer                        "
+                    android:text="Tareas por hacer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -50,7 +50,7 @@
 
             <Button
                 android:layout_marginTop="35dp"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="140dp"
                 android:id="@+id/btnAnyadirNueva"
                 android:text="+"
                 android:background="@drawable/bgbtnnuevo"
